@@ -8,23 +8,24 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
   
-  <!-- ПОДКЛЮЧАЕМ ВНЕШНИЙ ФАЙЛ СТИЛЕЙ -->
+  <!-- ПОДКЛЮЧАЕМ ВНЕШНИЙ CSS -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- ШАПКА С ЛОГОТИПОМ DBSL-DLo5zY4g.png -->
+  <!-- ШАПКА -->
   <header class="header">
     <div class="container">
       <div class="header-inner">
         <a href="#" class="site-logo">
+          <!-- ИСПОЛЬЗУЕМ ВАШЕ РЕАЛЬНОЕ ИМЯ ФАЙЛА -->
           <img src="DBSL-DLo5zY4g.png" alt="DBSL Logo">
         </a>
       </div>
     </div>
   </header>
 
-  <!-- ПЕРВЫЙ ЭКРАН (HERO) -->
+  <!-- HERO -->
   <section class="hero">
     <div class="container">
       <h1 class="hero-title">ProdEx</h1>
@@ -39,56 +40,42 @@
     </div>
   </section>
 
-  <!-- 1. ПРЕИМУЩЕСТВА СЕРВИСА -->
+  <!-- 1. ПРЕИМУЩЕСТВА -->
   <section id="advantages">
     <div class="container">
       <h2 class="section-title">Преимущества сервиса</h2>
       <div class="adv-box">
         <div class="adv-row">
           <div class="adv-left">
-            <span class="mini-icon">
-              <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-            </span>
+            <span class="mini-icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></span>
             <span class="adv-title">Собственный метод</span>
           </div>
           <div class="adv-desc">Автоматизированный сбор и верификация полочных данных без ручных искажений и слепых зон.</div>
         </div>
-
         <div class="adv-row">
           <div class="adv-left">
-            <span class="mini-icon">
-              <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            </span>
+            <span class="mini-icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
             <span class="adv-title">Детальное покрытие по каждому магазину</span>
           </div>
           <div class="adv-desc">Данные собираются с привязкой к конкретному адресу торговой точки во всех регионах присутствия сетей.</div>
         </div>
-
         <div class="adv-row">
           <div class="adv-left">
-            <span class="mini-icon">
-              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-            </span>
+            <span class="mini-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
             <span class="adv-title">Оперативный сбор за 24 часа</span>
           </div>
           <div class="adv-desc">Ежедневный мониторинг более 100 торговых сетей и свыше 120 млн ценовых наблюдений по стране.</div>
         </div>
-
         <div class="adv-row">
           <div class="adv-left">
-            <span class="mini-icon">
-              <svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
-            </span>
+            <span class="mini-icon"><svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></span>
             <span class="adv-title">Аналитика без рутины</span>
           </div>
           <div class="adv-desc">Готовые аналитические срезы и 19 специализированных BI-отчётов вместо часов ручной сводки в Excel.</div>
         </div>
-
         <div class="adv-row">
           <div class="adv-left">
-            <span class="mini-icon">
-              <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-            </span>
+            <span class="mini-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></span>
             <span class="adv-title">Формат под задачу</span>
           </div>
           <div class="adv-desc">Выгрузка в Excel, PDF-отчёты, сводки в Telegram по расписанию или прямая передача данных по API.</div>
@@ -97,154 +84,50 @@
     </div>
   </section>
 
-  <!-- 2. ПРОБЛЕМЫ РЫНКА -->
+  <!-- 2. ПРОБЛЕМЫ -->
   <section id="problems">
     <div class="container">
       <h2 class="section-title">Проблемы рынка</h2>
       <div class="problems-grid">
-        <div class="problem-card">
-          <div class="problem-title">Отсутствие прозрачности на местах</div>
-          <div class="problem-text">Невозможно вручную проверить наличие товара, актуальный ценник и долю полки в тысячах магазинов по всей стране.</div>
-          <div class="problem-num">01</div>
-        </div>
-        <div class="problem-card">
-          <div class="problem-title">Срыв промо-активностей</div>
-          <div class="problem-text">Акция согласована с сетью, но скидочный ценник выведен не во всех торговых точках — бизнес теряет маржу и объём.</div>
-          <div class="problem-num">02</div>
-        </div>
-        <div class="problem-card">
-          <div class="problem-title">Запоздалая реакция на действия конкурентов</div>
-          <div class="problem-text">Конкуренты меняют регулярные цены и запускают глубокие скидки быстрее, чем приходят классические отчёты.</div>
-          <div class="problem-num">03</div>
-        </div>
-        <div class="problem-card">
-          <div class="problem-title">Потери продаж из-за пустых полок (OOS)</div>
-          <div class="problem-text">Товар числится в матрице, но отсутствует на полке конкретного магазина, уступая трафик конкурентам.</div>
-          <div class="problem-num">04</div>
-        </div>
-        <div class="problem-card">
-          <div class="problem-title">Нарушение РРЦ и ценовой демпинг</div>
-          <div class="problem-text">Отсутствие ежедневного контроля приводит к разрушению ценового коридора между федеральными и локальными сетями.</div>
-          <div class="problem-num">05</div>
-        </div>
-        <div class="problem-card">
-          <div class="problem-title">Сложность оценки новых регионов</div>
-          <div class="problem-text">Выход в новый регион или сеть без точной полочной и ценовой картины несёт риск кассовых разрывов и ошибок.</div>
-          <div class="problem-num">06</div>
-        </div>
-        <div class="problem-card full">
-          <div class="problem-title">Дорогая и медленная ручная аналитика</div>
-          <div class="problem-text">Сбор разрозненных прайсов, ручное сопоставление SKU и сведение таблиц отнимают ресурсы команды, но всё равно оставляют решения на уровне ощущений, а не фактов.</div>
-          <div class="problem-num">07</div>
-        </div>
+        <div class="problem-card"><div class="problem-title">Отсутствие прозрачности на местах</div><div class="problem-text">Невозможно вручную проверить наличие товара, актуальный ценник и долю полки в тысячах магазинов по всей стране.</div><div class="problem-num">01</div></div>
+        <div class="problem-card"><div class="problem-title">Срыв промо-активностей</div><div class="problem-text">Акция согласована с сетью, но скидочный ценник выведен не во всех торговых точках — бизнес теряет маржу и объём.</div><div class="problem-num">02</div></div>
+        <div class="problem-card"><div class="problem-title">Запоздалая реакция на действия конкурентов</div><div class="problem-text">Конкуренты меняют регулярные цены и запускают глубокие скидки быстрее, чем приходят классические отчёты.</div><div class="problem-num">03</div></div>
+        <div class="problem-card"><div class="problem-title">Потери продаж из-за пустых полок (OOS)</div><div class="problem-text">Товар числится в матрице, но отсутствует на полке конкретного магазина, уступая трафик конкурентам.</div><div class="problem-num">04</div></div>
+        <div class="problem-card"><div class="problem-title">Нарушение РРЦ и ценовой демпинг</div><div class="problem-text">Отсутствие ежедневного контроля приводит к разрушению ценового коридора между федеральными и локальными сетями.</div><div class="problem-num">05</div></div>
+        <div class="problem-card"><div class="problem-title">Сложность оценки новых регионов</div><div class="problem-text">Выход в новый регион или сеть без точной полочной и ценовой картины несёт риск кассовых разрывов и ошибок.</div><div class="problem-num">06</div></div>
+        <div class="problem-card full"><div class="problem-title">Дорогая и медленная ручная аналитика</div><div class="problem-text">Сбор разрозненных прайсов, ручное сопоставление SKU и сведение таблиц отнимают ресурсы команды, но всё равно оставляют решения на уровне ощущений, а не фактов.</div><div class="problem-num">07</div></div>
       </div>
     </div>
   </section>
 
-  <!-- 3. НАШЕ РЕШЕНИЕ -->
+  <!-- 3. РЕШЕНИЕ -->
   <section id="solution">
     <div class="container">
       <h2 class="section-title">Наше решение</h2>
-      <p class="section-subtitle">
-        Отчёт DBSL ProdEx — это не просто таблица в Excel, а комплексная система мониторинга ритейла с детализацией до каждой торговой точки.
-      </p>
-
+      <p class="section-subtitle">Отчёт DBSL ProdEx — это не просто таблица в Excel, а комплексная система мониторинга ритейла с детализацией до каждой торговой точки.</p>
       <div class="solution-top">
         <div class="solution-left">
           <ul class="check-list">
-            <li>
-              <span class="check-bullet">✓</span>
-              <span>Детализация: сеть, регион, адрес ТТ, бренд, SKU, GTIN</span>
-            </li>
-            <li>
-              <span class="check-bullet">✓</span>
-              <span>Мониторинг регулярных цен, промо-цен и остатков</span>
-            </li>
-            <li>
-              <span class="check-bullet">✓</span>
-              <span>Аналитические выводы по отклонениям и OOS</span>
-            </li>
-            <li>
-              <span class="check-bullet">✓</span>
-              <span>Готовые BI-отчёты: Excel, PDF, Telegram-сводки, API</span>
-            </li>
+            <li><span class="check-bullet">✓</span><span>Детализация: сеть, регион, адрес ТТ, бренд, SKU, GTIN</span></li>
+            <li><span class="check-bullet">✓</span><span>Мониторинг регулярных цен, промо-цен и остатков</span></li>
+            <li><span class="check-bullet">✓</span><span>Аналитические выводы по отклонениям и OOS</span></li>
+            <li><span class="check-bullet">✓</span><span>Готовые BI-отчёты: Excel, PDF, Telegram-сводки, API</span></li>
           </ul>
-          <a href="ProdEx_BI_presentation.pdf" target="_blank" class="solution-btn-wide">
-            Посмотреть презентацию ProdEx BI (PDF)
-          </a>
+          <a href="ProdEx_BI_presentation.pdf" target="_blank" class="solution-btn-wide">Посмотреть презентацию ProdEx BI (PDF)</a>
         </div>
-
-        <!-- Превью таблицы отчёта справа -->
         <div class="excel-card">
           <div>
-            <div class="excel-top-bar">
-              <span>Digital Business Solutions Lab v4.1</span>
-              <span>ProdEx Report</span>
-            </div>
-            <div class="excel-metrics-bar">
-              <span>7 537 — Кол-во позиций</span>
-              <span>4,99 ₽ — Мин. цена</span>
-              <span>1 219,99 ₽ — Макс. цена</span>
-            </div>
+            <div class="excel-top-bar"><span>Digital Business Solutions Lab v4.1</span><span>ProdEx Report</span></div>
+            <div class="excel-metrics-bar"><span>7 537 — Кол-во позиций</span><span>4,99 ₽ — Мин. цена</span><span>1 219,99 ₽ — Макс. цена</span></div>
             <div class="excel-table-scroll">
               <table class="excel-grid">
-                <thead>
-                  <tr>
-                    <th>Сеть</th>
-                    <th>Тип</th>
-                    <th>Адрес ТТ</th>
-                    <th>Бренд</th>
-                    <th>Продукт</th>
-                    <th>Цена</th>
-                    <th>Промо</th>
-                  </tr>
-                </thead>
+                <thead><tr><th>Сеть</th><th>Тип</th><th>Адрес ТТ</th><th>Бренд</th><th>Продукт</th><th>Цена</th><th>Промо</th></tr></thead>
                 <tbody>
-                  <tr>
-                    <td>Ашан</td>
-                    <td>ГМ</td>
-                    <td>г. Иваново, ул. Куконковых, 1</td>
-                    <td>Домик в деревне</td>
-                    <td>Молоко паст. 3,2% 930мл</td>
-                    <td>124,99</td>
-                    <td>99,90</td>
-                  </tr>
-                  <tr>
-                    <td>Ашан</td>
-                    <td>ГМ</td>
-                    <td>г. Иваново, ул. Куконковых, 1</td>
-                    <td>Село Зелёное</td>
-                    <td>Молоко ультрапаст. 3,2%</td>
-                    <td>119,90</td>
-                    <td>94,99</td>
-                  </tr>
-                  <tr>
-                    <td>Лента</td>
-                    <td>ГМ</td>
-                    <td>г. Иваново, Лежневский, 55</td>
-                    <td>Parmalat</td>
-                    <td>Молоко ультрапаст. 3,5% 1л</td>
-                    <td>159,99</td>
-                    <td>127,99</td>
-                  </tr>
-                  <tr>
-                    <td>Магнит</td>
-                    <td>СМ</td>
-                    <td>г. Москва, Профсоюзная, 102</td>
-                    <td>Простоквашино</td>
-                    <td>Масло сливочное 82,5% 180г</td>
-                    <td>199,99</td>
-                    <td>169,99</td>
-                  </tr>
-                  <tr>
-                    <td>Пятёрочка</td>
-                    <td>СМ</td>
-                    <td>г. Москва, Ленинский пр-т, 45</td>
-                    <td>ЭкоНива</td>
-                    <td>Молоко питьевое 3,2% 1л</td>
-                    <td>109,99</td>
-                    <td>89,99</td>
-                  </tr>
+                  <tr><td>Ашан</td><td>ГМ</td><td>г. Иваново, ул. Куконковых, 1</td><td>Домик в деревне</td><td>Молоко паст. 3,2% 930мл</td><td>124,99</td><td>99,90</td></tr>
+                  <tr><td>Ашан</td><td>ГМ</td><td>г. Иваново, ул. Куконковых, 1</td><td>Село Зелёное</td><td>Молоко ультрапаст. 3,2%</td><td>119,90</td><td>94,99</td></tr>
+                  <tr><td>Лента</td><td>ГМ</td><td>г. Иваново, Лежневский, 55</td><td>Parmalat</td><td>Молоко ультрапаст. 3,5% 1л</td><td>159,99</td><td>127,99</td></tr>
+                  <tr><td>Магнит</td><td>СМ</td><td>г. Москва, Профсоюзная, 102</td><td>Простоквашино</td><td>Масло сливочное 82,5% 180г</td><td>199,99</td><td>169,99</td></tr>
+                  <tr><td>Пятёрочка</td><td>СМ</td><td>г. Москва, Ленинский пр-т, 45</td><td>ЭкоНива</td><td>Молоко питьевое 3,2% 1л</td><td>109,99</td><td>89,99</td></tr>
                 </tbody>
               </table>
             </div>
@@ -252,267 +135,78 @@
           <div class="excel-bottom-bar">Детализация: SKU, бренд, сеть, цена, остатки, промо</div>
         </div>
       </div>
-
       <div class="sub-label">Что входит в систему:</div>
       <div class="grid-3">
-        <div class="info-card">
-          <div class="mini-icon">
-            <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-          </div>
-          <h4>Динамика и индекс цен</h4>
-          <p>Отслеживание трендов во времени и честное сравнение уровня цен между сетями по общим SKU (база = 100%).</p>
-        </div>
-
-        <div class="info-card">
-          <div class="mini-icon">
-            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
-          </div>
-          <h4>Ассортиментная матрица</h4>
-          <p>Анализ представленности брендов по сетям и городам, выявление «белых пятен» для расширения дистрибуции.</p>
-        </div>
-
-        <div class="info-card">
-          <div class="mini-icon">
-            <svg viewBox="0 0 24 24"><path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83 0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
-          </div>
-          <h4>Промо-монитор</h4>
-          <p>Контроль доли ассортимента в акции, средней глубины скидки по каждой сети и топ самых агрессивных промо.</p>
-        </div>
-
-        <div class="info-card">
-          <div class="mini-icon">
-            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          </div>
-          <h4>Контроль РРЦ и прайса</h4>
-          <p>Поимённое выявление демпинга, завышения цен и акций ниже установленного коридора РРЦ по каждому магазину.</p>
-        </div>
-
-        <div class="info-card">
-          <div class="mini-icon">
-            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-          </div>
-          <h4>Мониторинг OOS (наличия)</h4>
-          <p>Фиксация пропажи товара с полки и нулевых остатков на 14-дневном окне наблюдения без ложных срабатываний.</p>
-        </div>
-
-        <div class="info-card">
-          <div class="mini-icon">
-            <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-          </div>
-          <h4>Автоматизация и выгрузка</h4>
-          <p>Запуск сценариев по расписанию, сводки в Telegram, КП-генератор, ABC-анализ и прямая выгрузка срезов JET.</p>
-        </div>
+        <div class="info-card"><div class="mini-icon"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div><h4>Динамика и индекс цен</h4><p>Отслеживание трендов во времени и честное сравнение уровня цен между сетями по общим SKU (база = 100%).</p></div>
+        <div class="info-card"><div class="mini-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg></div><h4>Ассортиментная матрица</h4><p>Анализ представленности брендов по сетям и городам, выявление «белых пятен» для расширения дистрибуции.</p></div>
+        <div class="info-card"><div class="mini-icon"><svg viewBox="0 0 24 24"><path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83 0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg></div><h4>Промо-монитор</h4><p>Контроль доли ассортимента в акции, средней глубины скидки по каждой сети и топ самых агрессивных промо.</p></div>
+        <div class="info-card"><div class="mini-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h4>Контроль РРЦ и прайса</h4><p>Поимённое выявление демпинга, завышения цен и акций ниже установленного коридора РРЦ по каждому магазину.</p></div>
+        <div class="info-card"><div class="mini-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div><h4>Мониторинг OOS (наличия)</h4><p>Фиксация пропажи товара с полки и нулевых остатков на 14-дневном окне наблюдения без ложных срабатываний.</p></div>
+        <div class="info-card"><div class="mini-icon"><svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></div><h4>Автоматизация и выгрузка</h4><p>Запуск сценариев по расписанию, сводки в Telegram, КП-генератор, ABC-анализ и прямая выгрузка срезов JET.</p></div>
       </div>
     </div>
   </section>
 
-  <!-- 4. КАКИЕ ВОЗМОЖНОСТИ ЭТО ОТКРЫВАЕТ -->
+  <!-- 4. ВОЗМОЖНОСТИ -->
   <section id="opportunities">
     <div class="container">
       <h2 class="section-title">Какие возможности это открывает</h2>
       <div class="grid-2">
-        <div class="info-card">
-          <div class="mini-icon">
-            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/></svg>
-          </div>
-          <h4>Точечный контроль каждой полки</h4>
-          <p>Переход от усреднённых рыночных отчётов к управлению продажами на уровне конкретных магазинов и адресов.</p>
-        </div>
-
-        <div class="info-card">
-          <div class="mini-icon">
-            <svg viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
-          </div>
-          <h4>Защита маржинальности и РРЦ</h4>
-          <p>Своевременное пресечение ценового демпинга и контроль соблюдения рекомендованных цен во всех каналах сбыта.</p>
-        </div>
-
-        <div class="info-card">
-          <div class="mini-icon">
-            <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-          </div>
-          <h4>Повышение отдачи от промо</h4>
-          <p>Прозрачная картина фактического исполнения акций в сетях и понимание промо-давления конкурентов.</p>
-        </div>
-
-        <div class="info-card">
-          <div class="mini-icon">
-            <svg viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
-          </div>
-          <h4>Расширение матрицы и листинга</h4>
-          <p>Наглядная карта «белых пятен» и Бренд-паспорт дают твёрдые аргументы на переговорах с категорийными менеджерами сетей.</p>
-        </div>
-
-        <div class="info-card">
-          <div class="mini-icon">
-            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          </div>
-          <h4>Экономия десятков часов работы</h4>
-          <p>Команда получает готовые таблицы, графики и дайджесты изменений по расписанию без ручного сбора и сведения.</p>
-        </div>
-
-        <div class="info-card">
-          <div class="mini-icon">
-            <svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
-          </div>
-          <h4>Чистые данные для вашей BI-аналитики</h4>
-          <p>Встроенная проверка качества карточек по GTIN гарантирует отсутствие дублей и ошибок при сопоставлении товаров.</p>
-        </div>
+        <div class="info-card"><div class="mini-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/></svg></div><h4>Точечный контроль каждой полки</h4><p>Переход от усреднённых рыночных отчётов к управлению продажами на уровне конкретных магазинов и адресов.</p></div>
+        <div class="info-card"><div class="mini-icon"><svg viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div><h4>Защита маржинальности и РРЦ</h4><p>Своевременное пресечение ценового демпинга и контроль соблюдения рекомендованных цен во всех каналах сбыта.</p></div>
+        <div class="info-card"><div class="mini-icon"><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div><h4>Повышение отдачи от промо</h4><p>Прозрачная картина фактического исполнения акций в сетях и понимание промо-давления конкурентов.</p></div>
+        <div class="info-card"><div class="mini-icon"><svg viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div><h4>Расширение матрицы и листинга</h4><p>Наглядная карта «белых пятен» и Бренд-паспорт дают твёрдые аргументы на переговорах с категорийными менеджерами сетей.</p></div>
+        <div class="info-card"><div class="mini-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><h4>Экономия десятков часов работы</h4><p>Команда получает готовые таблицы, графики и дайджесты изменений по расписанию без ручного сбора и сведения.</p></div>
+        <div class="info-card"><div class="mini-icon"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></div><h4>Чистые данные для вашей BI-аналитики</h4><p>Встроенная проверка качества карточек по GTIN гарантирует отсутствие дублей и ошибок при сопоставлении товаров.</p></div>
       </div>
     </div>
   </section>
 
-  <!-- 5. КАК ПОЛУЧИТЬ ОТЧЁТ -->
+  <!-- 5. ШАГИ -->
   <section id="steps">
     <div class="container">
       <h2 class="section-title">Как получить отчёт</h2>
       <div class="steps-wrapper">
-        <div class="step-row" onclick="selectStep(this)">
-          <div class="step-icon-col">
-            <svg viewBox="0 0 24 24"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
-          </div>
-          <div class="step-body">
-            <div class="step-head">
-              <span class="step-dot">1</span>
-              <span class="step-num-label">Шаг 1</span>
-            </div>
-            <div class="step-title">Заявка</div>
-            <div class="step-desc">Оставьте заявку на сайте — мы свяжемся с вами для уточнения деталей вашего бизнеса.</div>
-          </div>
-        </div>
-
-        <div class="step-row active" onclick="selectStep(this)">
-          <div class="step-icon-col">
-            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
-          </div>
-          <div class="step-body">
-            <div class="step-head">
-              <span class="step-dot">2</span>
-              <span class="step-num-label">Шаг 2</span>
-            </div>
-            <div class="step-title">Задача</div>
-            <div class="step-desc">Определяем интересующие торговые сети, географию, категории, бренды или список SKU для пилотного запуска.</div>
-          </div>
-        </div>
-
-        <div class="step-row" onclick="selectStep(this)">
-          <div class="step-icon-col">
-            <svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
-          </div>
-          <div class="step-body">
-            <div class="step-head">
-              <span class="step-dot">3</span>
-              <span class="step-num-label">Шаг 3</span>
-            </div>
-            <div class="step-title">Сбор данных</div>
-            <div class="step-desc">Настраиваем автоматический сбор по выбранным параметрам и проводим контроль качества данных.</div>
-          </div>
-        </div>
-
-        <div class="step-row" onclick="selectStep(this)">
-          <div class="step-icon-col">
-            <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-          </div>
-          <div class="step-body">
-            <div class="step-head">
-              <span class="step-dot">4</span>
-              <span class="step-num-label">Шаг 4</span>
-            </div>
-            <div class="step-title">Готовый отчёт</div>
-            <div class="step-desc">Формируем пилотный отчёт с таблицами, графиками и выводами в течение 3–7 дней и проводим совместный разбор.</div>
-          </div>
-        </div>
-
-        <div class="step-row" onclick="selectStep(this)">
-          <div class="step-icon-col">
-            <svg viewBox="0 0 24 24"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15"/></svg>
-          </div>
-          <div class="step-body">
-            <div class="step-head">
-              <span class="step-dot">5</span>
-              <span class="step-num-label">Шаг 5</span>
-            </div>
-            <div class="step-title">Запуск</div>
-            <div class="step-desc">Переходим в регулярный формат мониторинга с доставкой отчётов по расписанию и интеграцией в ваши процессы.</div>
-          </div>
-        </div>
+        <div class="step-row" onclick="selectStep(this)"><div class="step-icon-col"><svg viewBox="0 0 24 24"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg></div><div class="step-body"><div class="step-head"><span class="step-dot">1</span><span class="step-num-label">Шаг 1</span></div><div class="step-title">Заявка</div><div class="step-desc">Оставьте заявку на сайте — мы свяжемся с вами для уточнения деталей вашего бизнеса.</div></div></div>
+        <div class="step-row active" onclick="selectStep(this)"><div class="step-icon-col"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg></div><div class="step-body"><div class="step-head"><span class="step-dot">2</span><span class="step-num-label">Шаг 2</span></div><div class="step-title">Задача</div><div class="step-desc">Определяем интересующие торговые сети, географию, категории, бренды или список SKU для пилотного запуска.</div></div></div>
+        <div class="step-row" onclick="selectStep(this)"><div class="step-icon-col"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></div><div class="step-body"><div class="step-head"><span class="step-dot">3</span><span class="step-num-label">Шаг 3</span></div><div class="step-title">Сбор данных</div><div class="step-desc">Настраиваем автоматический сбор по выбранным параметрам и проводим контроль качества данных.</div></div></div>
+        <div class="step-row" onclick="selectStep(this)"><div class="step-icon-col"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div><div class="step-body"><div class="step-head"><span class="step-dot">4</span><span class="step-num-label">Шаг 4</span></div><div class="step-title">Готовый отчёт</div><div class="step-desc">Формируем пилотный отчёт с таблицами, графиками и выводами в течение 3–7 дней и проводим совместный разбор.</div></div></div>
+        <div class="step-row" onclick="selectStep(this)"><div class="step-icon-col"><svg viewBox="0 0 24 24"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15"/></svg></div><div class="step-body"><div class="step-head"><span class="step-dot">5</span><span class="step-num-label">Шаг 5</span></div><div class="step-title">Запуск</div><div class="step-desc">Переходим в регулярный формат мониторинга с доставкой отчётов по расписанию и интеграцией в ваши процессы.</div></div></div>
       </div>
     </div>
   </section>
 
-  <!-- 6. КОМУ БУДЕТ ПОЛЕЗЕН СЕРВИС -->
+  <!-- 6. АУДИТОРИЯ -->
   <section id="audience">
     <div class="container">
       <h2 class="section-title">Кому будет полезен сервис</h2>
       <div class="grid-3">
-        <div class="info-card">
-          <div class="mini-icon">
-            <svg viewBox="0 0 24 24"><path d="M3 21h18M3 7v1a3 3 0 006 0V7m0 1a3 3 0 006 0V7m0 1a3 3 0 006 0V7H3l2-4h14l2 4"/></svg>
-          </div>
-          <h4>Производителям и брендам</h4>
-          <p>Контроль РРЦ и ценового коридора, мониторинг листинга, анализ «белых пятен», контроль OOS и промо-активности конкурентов.</p>
-        </div>
-
-        <div class="info-card">
-          <div class="mini-icon">
-            <svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg>
-          </div>
-          <h4>Ритейлерам</h4>
-          <p>Позиционирование по ценовому индексу против конкурентов, бенчмарк глубины скидок и формирование региональной ценовой политики.</p>
-        </div>
-
-        <div class="info-card">
-          <div class="mini-icon">
-            <svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
-          </div>
-          <h4>Дистрибьюторам и трейдерам</h4>
-          <p>Поиск точек арбитража по разбросу цен на рынке, выбор оптимального тайминга закупок и выявление незакрытого спроса в регионах.</p>
-        </div>
+        <div class="info-card"><div class="mini-icon"><svg viewBox="0 0 24 24"><path d="M3 21h18M3 7v1a3 3 0 006 0V7m0 1a3 3 0 006 0V7m0 1a3 3 0 006 0V7H3l2-4h14l2 4"/></svg></div><h4>Производителям и брендам</h4><p>Контроль РРЦ и ценового коридора, мониторинг листинга, анализ «белых пятен», контроль OOS и промо-активности конкурентов.</p></div>
+        <div class="info-card"><div class="mini-icon"><svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg></div><h4>Ритейлерам</h4><p>Позиционирование по ценовому индексу против конкурентов, бенчмарк глубины скидок и формирование региональной ценовой политики.</p></div>
+        <div class="info-card"><div class="mini-icon"><svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div><h4>Дистрибьюторам и трейдерам</h4><p>Поиск точек арбитража по разбросу цен на рынке, выбор оптимального тайминга закупок и выявление незакрытого спроса в регионах.</p></div>
       </div>
     </div>
   </section>
 
-  <!-- 7. ПОЛУЧИТЕ ВАШ ОТЧЁТ БЕСПЛАТНО -->
+  <!-- 7. ФОРМА -->
   <section id="order-form">
     <div class="container">
       <div class="form-card">
         <div>
           <h2 class="form-card-title">Получите ваш<br>отчёт бесплатно</h2>
-          <p class="form-card-desc">
-            Оставьте заявку, и мы подготовим пилотный срез данных по вашей категории, бренду или торговой сети, чтобы вы оценили точность и пользу ProdEx на практике.
-          </p>
+          <p class="form-card-desc">Оставьте заявку, и мы подготовим пилотный срез данных по вашей категории, бренду или торговой сети, чтобы вы оценили точность и пользу ProdEx на практике.</p>
         </div>
-
         <form onsubmit="handleFormSubmit(event)">
           <div class="form-fields">
-            <div class="field-wrap">
-              <label>Имя</label>
-              <input type="text" class="input-ctrl" placeholder="Ваше имя" required>
-            </div>
-            <div class="field-wrap">
-              <label>Компания</label>
-              <input type="text" class="input-ctrl" placeholder="Название компании" required>
-            </div>
-            <div class="field-wrap">
-              <label>Email</label>
-              <input type="email" class="input-ctrl" placeholder="example@mail.ru" required>
-            </div>
-            <div class="field-wrap">
-              <label>Телефон</label>
-              <input type="tel" class="input-ctrl" placeholder="+7 (999) 000-00-00" required>
-            </div>
-            <div class="field-wrap full">
-              <label>Комментарий</label>
-              <textarea class="input-ctrl" placeholder="Опишите вашу задачу, категорию или интересующие сети"></textarea>
-            </div>
-            <div class="field-wrap full">
-              <button type="submit" class="btn btn-primary submit-btn">Отправить заявку →</button>
-            </div>
+            <div class="field-wrap"><label>Имя</label><input type="text" class="input-ctrl" placeholder="Ваше имя" required></div>
+            <div class="field-wrap"><label>Компания</label><input type="text" class="input-ctrl" placeholder="Название компании" required></div>
+            <div class="field-wrap"><label>Email</label><input type="email" class="input-ctrl" placeholder="example@mail.ru" required></div>
+            <div class="field-wrap"><label>Телефон</label><input type="tel" class="input-ctrl" placeholder="+7 (999) 000-00-00" required></div>
+            <div class="field-wrap full"><label>Комментарий</label><textarea class="input-ctrl" placeholder="Опишите вашу задачу, категорию или интересующие сети"></textarea></div>
+            <div class="field-wrap full"><button type="submit" class="btn btn-primary submit-btn">Отправить заявку →</button></div>
             <div class="consent-row">
               <input type="checkbox" id="consent-check" checked required>
-              <label for="consent-check">
-                Я соглашаюсь с <span class="consent-link" onclick="openModal(event)">Политикой конфиденциальности</span>
-              </label>
+              <label for="consent-check">Я соглашаюсь с <span class="consent-link" onclick="openModal(event)">Политикой конфиденциальности</span></label>
             </div>
           </div>
         </form>
@@ -520,49 +214,26 @@
     </div>
   </section>
 
-  <!-- 8. ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ -->
+  <!-- 8. FAQ -->
   <section id="faq">
     <div class="container">
       <h2 class="section-title">Часто задаваемые вопросы</h2>
       <div class="faq-stack">
         <div class="faq-box open">
-          <button class="faq-btn" onclick="toggleFaq(this)">
-            <span>Как быстро мы получим первый отчёт?</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-content">
-            Пилотный запуск занимает от 3 до 7 дней в зависимости от выбранной категории, географии и списка сетей. По итогам вы получаете готовый отчёт и совместный разбор инсайтов с нашей командой.
-          </div>
+          <button class="faq-btn" onclick="toggleFaq(this)"><span>Как быстро мы получим первый отчёт?</span><span class="faq-icon">+</span></button>
+          <div class="faq-content">Пилотный запуск занимает от 3 до 7 дней в зависимости от выбранной категории, географии и списка сетей. По итогам вы получаете готовый отчёт и совместный разбор инсайтов с нашей командой.</div>
         </div>
-
         <div class="faq-box">
-          <button class="faq-btn" onclick="toggleFaq(this)">
-            <span>По каким торговым сетям и городам возможен мониторинг?</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-content">
-            В нашей базе более 100 федеральных и региональных сетей по всей России (Пятёрочка, Магнит, Лента, Ашан, Перекрёсток, Дикси, Метро и др.) и свыше 120 млн наблюдений цен с детализацией до каждой торговой точки.
-          </div>
+          <button class="faq-btn" onclick="toggleFaq(this)"><span>По каким торговым сетям и городам возможен мониторинг?</span><span class="faq-icon">+</span></button>
+          <div class="faq-content">В нашей базе более 100 федеральных и региональных сетей по всей России (Пятёрочка, Магнит, Лента, Ашан, Перекрёсток, Дикси, Метро и др.) и свыше 120 млн наблюдений цен с детализацией до каждой торговой точки.</div>
         </div>
-
         <div class="faq-box">
-          <button class="faq-btn" onclick="toggleFaq(this)">
-            <span>В каком формате передаются результаты?</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-content">
-            Мы предоставляем готовые к работе Excel-файлы с таблицами и диаграммами, PDF-презентации, автоматические уведомления и сводки в Telegram по расписанию, а также выгрузку сырых данных (формат JET / API).
-          </div>
+          <button class="faq-btn" onclick="toggleFaq(this)"><span>В каком формате передаются результаты?</span><span class="faq-icon">+</span></button>
+          <div class="faq-content">Мы предоставляем готовые к работе Excel-файлы с таблицами и диаграммами, PDF-презентации, автоматические уведомления и сводки в Telegram по расписанию, а также выгрузку сырых данных (формат JET / API).</div>
         </div>
-
         <div class="faq-box">
-          <button class="faq-btn" onclick="toggleFaq(this)">
-            <span>Можно ли настроить отчёты под наши собственные категории и прайс-лист?</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-content">
-            Да, система ProdEx BI поддерживает работу с вашим прайс-листом, матрицей РРЦ и пользовательским деревом категорий, автоматически сверяя товары между сетями по эталону GTIN.
-          </div>
+          <button class="faq-btn" onclick="toggleFaq(this)"><span>Можно ли настроить отчёты под наши собственные категории и прайс-лист?</span><span class="faq-icon">+</span></button>
+          <div class="faq-content">Да, система ProdEx BI поддерживает работу с вашим прайс-листом, матрицей РРЦ и пользовательским деревом категорий, автоматически сверяя товары между сетями по эталону GTIN.</div>
         </div>
       </div>
     </div>
@@ -571,9 +242,9 @@
   <!-- НОВЫЙ ФУТЕР -->
   <footer class="container footer">
       <div class="footer-left">
-          <!-- Логотип -->
           <div class="footer-logo">
-              <img src="logo.png" alt="DBSL" width="80">
+              <!-- ЗАМЕНИЛ НА ВАШЕ РЕАЛЬНОЕ ИМЯ ФАЙЛА -->
+              <img src="DBSL-DLo5zY4g.png" alt="DBSL" width="80">
           </div>
           <p class="footer-company">ООО «ПроДэкс» · Digital Business Solution Lab</p>
           <div class="footer-legal-links">
@@ -611,7 +282,7 @@
       </div>
   </footer>
 
-  <!-- МОДАЛЬНОЕ ОКНО: ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ -->
+  <!-- МОДАЛЬНОЕ ОКНО -->
   <div class="modal-overlay" id="policy-modal" onclick="closeModalOnBg(event)">
     <div class="modal-content">
       <span class="modal-close" onclick="closeModal()">&times;</span>
@@ -619,28 +290,20 @@
       <div class="modal-body">
         <h3>01. Общие положения</h3>
         <p>Настоящая Политика конфиденциальности определяет порядок обработки персональных данных пользователей сайта dbsl.ru, принадлежащего ООО «ПродЭкс» (далее — Оператор). Политика разработана в соответствии с требованиями Федерального закона от 27.07.2006 № 152-ФЗ «О персональных данных».</p>
-        
         <h3>02. Какие данные мы собираем</h3>
         <p>При заполнении формы заявки на сайте мы получаем следующие персональные данные: имя и фамилия, адрес электронной почты (email), номер телефона, название компании. Мы не собираем специальные категории персональных данных (биометрические, медицинские, данные о судимостях и др.).</p>
-        
         <h3>03. Цели обработки данных</h3>
         <p>Персональные данные используются исключительно для: обратной связи по оставленной заявке, направления коммерческого предложения и примера отчёта, заключения и исполнения договора на оказание услуг.</p>
-        
         <h3>04. Основания и сроки обработки</h3>
         <p>Обработка осуществляется на основании согласия субъекта персональных данных, выраженного при заполнении формы на сайте. Данные хранятся не дольше, чем этого требуют цели обработки, либо до момента отзыва согласия — но не более 3 лет с даты последнего взаимодействия.</p>
-        
         <h3>05. Передача третьим лицам</h3>
         <p>Оператор не передаёт персональные данные третьим лицам без согласия пользователя, за исключением случаев, предусмотренных законодательством Российской Федерации.</p>
-        
         <h3>06. Права пользователя</h3>
         <p>В соответствии с 152-ФЗ вы вправе: получить информацию об обрабатываемых персональных данных, потребовать уточнения, блокировки или уничтожения данных, отозвать согласие на обработку в любой момент. Для реализации прав направьте запрос на ask@dbsl.ru — мы ответим в течение 10 рабочих дней.</p>
-        
         <h3>07. Защита данных</h3>
         <p>Оператор принимает организационные и технические меры для защиты персональных данных от несанкционированного доступа, изменения, раскрытия или уничтожения.</p>
-        
         <h3>08. Изменения политики</h3>
         <p>Оператор вправе вносить изменения в настоящую Политику. Актуальная версия всегда доступна на сайте dbsl.ru. Продолжение использования сайта после публикации изменений означает согласие с новой редакцией.</p>
-        
         <h3>09. Контакты оператора</h3>
         <p>ООО «ПродЭкс» · Digital Business Solution Lab<br>Email: ask@dbsl.ru<br>Телефон: +7 961 247-57-70</p>
       </div>
@@ -653,34 +316,26 @@
       document.querySelectorAll('.step-row').forEach(el => el.classList.remove('active'));
       row.classList.add('active');
     }
-
     function toggleFaq(btn) {
       const box = btn.parentElement;
       box.classList.toggle('open');
     }
-
     function openModal(e) {
       if (e) e.preventDefault();
       document.getElementById('policy-modal').classList.add('active');
       document.body.style.overflow = 'hidden';
     }
-
     function closeModal() {
       document.getElementById('policy-modal').classList.remove('active');
       document.body.style.overflow = '';
     }
-
     function acceptPolicy() {
       closeModal();
       document.getElementById('consent-check').checked = true;
     }
-
     function closeModalOnBg(e) {
-      if (e.target.id === 'policy-modal') {
-        closeModal();
-      }
+      if (e.target.id === 'policy-modal') closeModal();
     }
-
     function handleFormSubmit(e) {
       e.preventDefault();
       alert('Спасибо! Ваша заявка принята. Мы свяжемся с вами в ближайшее время.');
