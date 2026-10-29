@@ -817,7 +817,8 @@ a {
 }
 
 .contact-link:hover {
-    color: #fff;
+    color: var(--accent-cyan);
+    text-decoration-color: var(--accent-cyan);
 }
 
 .contact-link:hover svg {
