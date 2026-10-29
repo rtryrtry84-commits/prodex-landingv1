@@ -800,9 +800,14 @@ a {
     display: flex;
     align-items: center;
     gap: 10px;
-    color: var(--text-muted);
+    color: var(--text-dark); /* Сделал цвет чуть светлее, чтобы текст читался лучше */
     font-size: 0.95rem;
     transition: var(--transition);
+    
+    /* Добавляем подчеркивание, как у политики конфиденциальности */
+    text-decoration: underline;
+    text-decoration-color: rgba(139, 92, 246, 0.4);
+    text-underline-offset: 4px;
 }
 
 .contact-link svg {
