@@ -803,9 +803,7 @@ a {
     color: var(--text-main);
     font-size: 0.95rem;
     transition: var(--transition);
-    
-    /* Явно указываем подчеркивание */
-    text-decoration: underline !important; 
+    text-decoration: underline !important; /* Добавляем !important */
     text-decoration-color: rgba(139, 92, 246, 0.6);
     text-underline-offset: 4px;
 }
