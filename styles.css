@@ -726,11 +726,9 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 40px 24px;
-    margin-top: 40px;
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
-    color: var(--text-muted);
-    font-size: 0.85rem;
+    padding: 60px 24px 40px;
+    margin-top: 60px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
     position: relative;
     z-index: 1;
 }
@@ -738,42 +736,118 @@ a {
 .footer-left {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 12px;
+    max-width: 450px;
 }
 
-.footer-legal {
-    cursor: pointer;
-    text-decoration: underline;
+.footer-logo {
+    margin-bottom: 8px;
 }
 
-.footer-legal:hover {
-    color: var(--accent-cyan);
+.footer-company {
+    font-size: 0.85rem;
+    color: var(--text-muted);
 }
 
-.footer-right {
+.footer-legal-links {
     display: flex;
-    flex-direction: column;
-    gap: 6px;
-    text-align: right;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+    font-size: 0.85rem;
 }
 
-.footer-right a:hover {
-    color: var(--accent-cyan);
-}
-.footer-right a {
+.footer-legal-links a {
+    color: var(--text-dark);
+    text-decoration: underline;
+    text-decoration-color: rgba(139, 92, 246, 0.4);
+    text-underline-offset: 4px;
     transition: var(--transition);
 }
 
-.footer-right a:hover {
-    color: var(--accent-cyan); /* Подсветка при наведении */
+.footer-legal-links a:hover {
+    color: var(--accent-cyan);
+    text-decoration-color: var(--accent-cyan);
 }
 
-/* Стиль для новой ссылки на канал */
-.footer-right .tg-channel {
+.footer-legal-links .separator {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.footer-copyright {
+    font-size: 0.8rem;
+    color: #64748b;
+    margin-top: 12px;
+}
+
+/* Правая часть с контактами */
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-width: 250px;
+}
+
+.footer-contact-title {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 4px;
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    transition: var(--transition);
+}
+
+.contact-link svg {
+    color: var(--accent-purple);
+    flex-shrink: 0;
+    transition: var(--transition);
+}
+
+.contact-link:hover {
+    color: #fff;
+}
+
+.contact-link:hover svg {
     color: var(--accent-cyan);
-    font-weight: 500;
+    transform: scale(1.1);
+}
+
+/* Выделяем канал */
+.tg-channel {
+    color: var(--accent-cyan);
+    font-weight: 600;
     margin-top: 4px;
-    display: inline-block;
+}
+
+.tg-channel svg {
+    color: var(--accent-cyan);
+}
+
+.tg-channel:hover {
+    color: #fff;
+}
+
+/* ========== АДАПТИВНОСТЬ ФУТЕРА ========== */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        gap: 40px;
+        padding: 40px 24px;
+    }
+    
+    .footer-right {
+        width: 100%;
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+        padding-top: 24px;
+    }
 }
 /* ========== МОДАЛЬНОЕ ОКНО ========== */
 .modal-overlay {
