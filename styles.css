@@ -760,7 +760,21 @@ a {
 .footer-right a:hover {
     color: var(--accent-cyan);
 }
+.footer-right a {
+    transition: var(--transition);
+}
 
+.footer-right a:hover {
+    color: var(--accent-cyan); /* Подсветка при наведении */
+}
+
+/* Стиль для новой ссылки на канал */
+.footer-right .tg-channel {
+    color: var(--accent-cyan);
+    font-weight: 500;
+    margin-top: 4px;
+    display: inline-block;
+}
 /* ========== МОДАЛЬНОЕ ОКНО ========== */
 .modal-overlay {
     position: fixed;
