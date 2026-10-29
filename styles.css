@@ -721,7 +721,7 @@ a {
     padding: 0 24px 20px;
 }
 
-/* ========== FOOTER ========== */
+/* ========== FOOTER (ИСПРАВЛЕННЫЙ) ========== */
 .footer {
     display: flex;
     justify-content: space-between;
@@ -760,7 +760,7 @@ a {
 .footer-legal-links a {
     color: var(--text-dark);
     text-decoration: underline;
-    text-decoration-color: rgba(139, 92, 246, 0.4);
+    text-decoration-color: rgba(139, 92, 246, 0.6); /* Сделал линии чуть ярче */
     text-underline-offset: 4px;
     transition: var(--transition);
 }
@@ -784,8 +784,8 @@ a {
 .footer-right {
     display: flex;
     flex-direction: column;
-    gap: 12px;
-    min-width: 250px;
+    gap: 14px;
+    min-width: 280px;
 }
 
 .footer-contact-title {
@@ -800,13 +800,13 @@ a {
     display: flex;
     align-items: center;
     gap: 10px;
-    color: var(--text-dark); /* Сделал цвет чуть светлее, чтобы текст читался лучше */
+    color: var(--text-main);
     font-size: 0.95rem;
     transition: var(--transition);
     
-    /* Добавляем подчеркивание, как у политики конфиденциальности */
-    text-decoration: underline;
-    text-decoration-color: rgba(139, 92, 246, 0.4);
+    /* Явно указываем подчеркивание */
+    text-decoration: underline !important; 
+    text-decoration-color: rgba(139, 92, 246, 0.6);
     text-underline-offset: 4px;
 }
 
@@ -831,6 +831,7 @@ a {
     color: var(--accent-cyan);
     font-weight: 600;
     margin-top: 4px;
+    text-decoration-color: var(--accent-cyan); /* Подчеркивание в тон тексту */
 }
 
 .tg-channel svg {
@@ -839,22 +840,9 @@ a {
 
 .tg-channel:hover {
     color: #fff;
+    text-decoration-color: #fff;
 }
 
-/* ========== АДАПТИВНОСТЬ ФУТЕРА ========== */
-@media (max-width: 768px) {
-    .footer {
-        flex-direction: column;
-        gap: 40px;
-        padding: 40px 24px;
-    }
-    
-    .footer-right {
-        width: 100%;
-        border-top: 1px solid rgba(255, 255, 255, 0.05);
-        padding-top: 24px;
-    }
-}
 /* ========== МОДАЛЬНОЕ ОКНО ========== */
 .modal-overlay {
     position: fixed;
@@ -941,7 +929,7 @@ a {
     align-self: flex-end;
 }
 
-/* ========== АДАПТИВНОСТЬ ========== */
+/* ========== АДАПТИВНОСТЬ (ОБЪЕДИНЕННАЯ) ========== */
 @media (max-width: 1024px) {
     .solution-block {
         flex-direction: column;
@@ -978,14 +966,6 @@ a {
     .form-row {
         flex-direction: column;
     }
-    .footer {
-        flex-direction: column;
-        gap: 20px;
-        text-align: left;
-    }
-    .footer-right {
-        text-align: left;
-    }
     .feature-card {
         padding: 18px;
     }
@@ -1005,6 +985,18 @@ a {
     .btn {
         width: 100%;
         max-width: 300px;
+    }
+    
+    /* Мобильный футер */
+    .footer {
+        flex-direction: column;
+        gap: 40px;
+        padding: 40px 24px;
+    }
+    .footer-right {
+        width: 100%;
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+        padding-top: 24px;
     }
 }
 
